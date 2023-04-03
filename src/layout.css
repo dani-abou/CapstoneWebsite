@@ -1,0 +1,51 @@
+.background {
+  background-color: #e5e6e7;
+  width: 100vw;
+  min-height: 100vh;
+}
+
+.frame {
+  margin-left: 50%;
+  transform: translate(-50%);
+  width: 1000px;
+  min-height: 100vh;
+  background-color: #f2f7fd;
+  box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+}
+
+.banner {
+  height: 225px;
+  background-color: #1e1e1e;
+  position: relative;
+}
+
+.logo {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  height: 180px;
+}
+
+.navbar {
+  height: 50px;
+  background-color: #f22521;
+  display: flex;
+  justify-content: center;
+  gap: 60px;
+}
+
+.nav-button {
+  background-color: #f22521;
+  height: 80%;
+  font-size: large;
+  border-radius: 8px;
+  outline: none;
+  border: none;
+  margin: 5% auto;
+}
+
+.nav-button:hover {
+  cursor: pointer;
+  filter: brightness(80%);
+}
