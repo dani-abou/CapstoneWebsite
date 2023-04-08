@@ -1,0 +1,41 @@
+.projects-grid {
+  display: flex;
+  flex-wrap: wrap;
+  padding: 50px;
+  justify-content: space-evenly;
+  gap: 30px;
+  background-color: rgb(244, 243, 243);
+}
+
+.project {
+  flex: 0 0 30%;
+  width: 100%;
+
+  margin-bottom: 30px;
+  height: 350px;
+  border-radius: 5px;
+  box-shadow: rgba(149, 157, 165, 0.2) 0px 8px 24px;
+  border: 0.2px solid lightgrey;
+  cursor: pointer;
+  overflow: hidden;
+
+  color: inherit;
+  text-decoration: inherit;
+}
+.project:hover {
+  transform: translateY(-5px) scale(1.005) translateZ(0);
+  box-shadow: 0 24px 36px rgba(0, 0, 0, 0.11);
+}
+
+.project-image {
+  width: 100%;
+  margin-left: 50%;
+  transform: translate(-50%);
+  height: 65%;
+}
+
+.project-members {
+  text-align: center;
+  font-weight: normal;
+  font-style: italic;
+}

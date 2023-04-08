@@ -1,0 +1,18 @@
+.person {
+  width: 100%;
+  height: 300px;
+  display: flex;
+}
+
+.leftPerson {
+  text-align: right;
+  background-color: lightgrey;
+}
+
+.rightPerson {
+  flex-direction: row-reverse;
+}
+
+.personImg {
+  margin: 15px;
+}

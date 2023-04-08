@@ -1,0 +1,16 @@
+.page-flex {
+  display: flex;
+  align-items: flex-start;
+  padding: 40px 20px;
+  gap: 50px;
+}
+
+.project-img {
+  width: 330px;
+}
+
+.project-members {
+  text-align: center;
+  font-weight: normal;
+  font-style: italic;
+}

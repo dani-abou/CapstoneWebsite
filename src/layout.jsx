@@ -1,11 +1,12 @@
 import { NavLink } from "react-router-dom";
+import logo from "./images/logo.png";
 import './layout.css';
 
 export default function Layout({ children }) {
   return <div className="background">
     <div className="frame">
       <div className="banner">
-        <img src='logo.png' alt='logo' className="logo" />
+        <img src={logo} alt='logo' className="logo" />
       </div>
       <Navbar />
       {children}
