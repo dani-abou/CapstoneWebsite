@@ -5,7 +5,7 @@ export const PEOPLE = [
   },
   {
     fullName: "Wilson Dobbs",
-    bio: "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Praesent posuere non sem vitae posuere. Vestibulum massa mi, imperdiet non tellus a, luctus mollis dolor. Quisque ex leo, molestie a eleifend in, cursus efficitur enim. Integer efficitur vel nisl eu dignissim. Donec libero ipsum, facilisis in tellus nec, placerat pretium dui. Sed finibus leo id dolor finibus posuere."
+    bio: "Wilson is completing majors in Music Technology and Computer Engineering. He enjoys writing music digitally, mixing songs, and building instruments. His focus is in signal processing and the integration of analog and digital circuits."
   },
   {
     fullName: "Morgan Forbes",
