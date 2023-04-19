@@ -4,7 +4,7 @@ import {
   createBrowserRouter, RouterProvider
 } from "react-router-dom";
 import Layout from './layout';
-import { EachProjectPage, HomePage, PeoplePage, ProjectsPage } from './pages';
+import { EachProjectPage, HomePage, PeoplePage, ProgramPage, ProjectsPage } from './pages';
 
 const router = createBrowserRouter([
   {
@@ -12,6 +12,13 @@ const router = createBrowserRouter([
     element: <Layout>
       <HomePage />
     </Layout>,
+  },
+  {
+    path: "/program",
+    element:
+      <Layout>
+        <ProgramPage />
+      </Layout >,
   },
   {
     path: "/projects",

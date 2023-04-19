@@ -3,8 +3,8 @@ import './styles.css'
 
 export default function Home() {
   return <div>
-    <br /><br />
-    <h1 style={{ textAlign: 'center' }}>Northeastern Music Technology 2023</h1>
+    <br />
+    <h1 className='title'>Northeastern Music Technology 2023</h1>
 
     <div className='section'>
       <h3>Event Info</h3>

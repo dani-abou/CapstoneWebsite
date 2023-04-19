@@ -1,6 +1,6 @@
 .person {
   width: 100%;
-  height: 300px;
+  min-height: 300px;
   display: flex;
 }
 
@@ -15,4 +15,19 @@
 
 .personImg {
   margin: 15px;
+  height: 270px;
+}
+
+.contents {
+  margin: 0 20px;
+}
+
+@media only screen and (max-device-width: 640px) {
+  .personImg {
+    margin-right: 5px;
+  }
+
+  .contents {
+    margin: 0 8px;
+  }
 }

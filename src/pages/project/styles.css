@@ -14,3 +14,23 @@
   font-weight: normal;
   font-style: italic;
 }
+
+.abstract {
+  text-align: justify;
+}
+
+@media only screen and (max-device-width: 640px) {
+  .page-flex {
+    display: inline;
+    padding: 0;
+  }
+
+  .project-img {
+    margin-left: 50%;
+    transform: translate(-50%);
+  }
+
+  .abstract {
+    margin: 0 20px 40px;
+  }
+}
