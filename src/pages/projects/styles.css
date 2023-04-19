@@ -35,19 +35,52 @@
   object-fit: cover;
 }
 
-.project-members {
+.projectMembers {
   text-align: center;
   font-weight: normal;
   font-style: italic;
 }
 
+.project-name {
+  text-align: center;
+}
+
 @media only screen and (max-device-width: 640px) {
   .projects-grid {
     padding: 25px 0;
-    gap: 5px;
+    flex-direction: column;
+    align-items: center;
+    justify-content: flex-start;
+    gap: 0px;
   }
 
   .project {
-    flex: 0 0 40%;
+    flex: 0 0 150px;
+    width: 80%;
+
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: none;
+  }
+  .project-image {
+    width: 50%;
+    height: auto;
+    margin-left: auto;
+    transform: none;
+    flex: 0 0 45%;
+  }
+
+  .project-name {
+    text-align: left;
+    font-size: 20px;
+  }
+
+  .projectMembers {
+    text-align: left;
+    font-size: 14px;
+  }
+
+  .contents {
+    flex: 1 1 60%;
   }
 }

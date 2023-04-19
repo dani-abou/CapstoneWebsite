@@ -21,10 +21,11 @@ export default function Projects() {
     {Object.keys(PROJECTS).map((projectKey, index) => {
       const project = PROJECTS[projectKey];
       return <a href={`project/${projectKey}`} className="project" key={index}>
-        {/* <img src={require(`../../images/projects/${projectKey}.png`)} alt={index} /> */}
         <img src={imgFilePath(projectKey)} alt={index} className="project-image" />
-        <h2 style={{ textAlign: 'center' }}>{project.name}</h2>
-        <h4 className="project-members">{formatNames(project.members)}</h4>
+        <div className="contents">
+          <h2 className="project-name">{project.name}</h2>
+          <h4 className="projectMembers">{formatNames(project.members)}</h4>
+        </div>
       </a>
     })}
 

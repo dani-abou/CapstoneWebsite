@@ -47,6 +47,8 @@
   outline: none;
   border: none;
   margin: 5% auto;
+  text-decoration: none;
+  color: none;
 }
 
 .nav-button:hover {
@@ -54,9 +56,13 @@
   filter: brightness(80%);
 }
 
-@media only screen and (max-device-width: 640px) {
+@media only screen and (max-device-width: 500px) {
   .frame {
     width: 100%;
     max-width: 100vw;
+  }
+
+  .navbar {
+    gap: 25px;
   }
 }

@@ -18,9 +18,8 @@ export default function People() {
           <div className={`person ${index % 2 === 1 ? 'rightPerson' : 'leftPerson'}`} key={index}>
             <img src={require(`../../images/people/${firstNameLowercase(person)}.jpg`)} alt={index} className="personImg" />
             <div className="contents">
-              <h1>{person.fullName}</h1>
-              <br />
-              <p>{person.bio}</p>
+              <h1 className="name">{person.fullName}</h1>
+              <p className="bio">{person.bio}</p>
             </div>
           </div>
         ))
