@@ -12,12 +12,15 @@
   min-height: 100vh;
   background-color: #f2f7fd;
   box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+  outline: none;
+  overflow: hidden;
 }
 
 .banner {
   height: 225px;
   background-color: #1e1e1e;
   position: relative;
+  width: 100%;
 }
 
 .logo {
@@ -49,4 +52,11 @@
 .nav-button:hover {
   cursor: pointer;
   filter: brightness(80%);
+}
+
+@media only screen and (max-device-width: 640px) {
+  .frame {
+    width: 100%;
+    max-width: 100vw;
+  }
 }

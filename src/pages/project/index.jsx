@@ -19,7 +19,7 @@ export default function Project() {
       <img src={imgFilePath(projectId)} alt={projectId} className="project-img" />
       <div>
         <br />
-        <p style={{ textAlign: 'justify' }}>{project.description}</p>
+        <p className='abstract'>{project.description}</p>
       </div>
     </div>
   </div>

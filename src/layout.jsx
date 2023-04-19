@@ -19,6 +19,9 @@ function Navbar() {
     <NavLink to="/">
       <button className="nav-button">Home</button>
     </NavLink>
+    <NavLink to="/program">
+      <button className="nav-button">Program</button>
+    </NavLink>
     <NavLink to="/projects">
       <button className="nav-button">Projects</button>
     </NavLink>

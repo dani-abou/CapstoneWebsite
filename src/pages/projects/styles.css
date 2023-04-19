@@ -39,3 +39,14 @@
   font-weight: normal;
   font-style: italic;
 }
+
+@media only screen and (max-device-width: 640px) {
+  .projects-grid {
+    padding: 25px 0;
+    gap: 5px;
+  }
+
+  .project {
+    flex: 0 0 40%;
+  }
+}
