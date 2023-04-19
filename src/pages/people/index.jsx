@@ -17,7 +17,7 @@ export default function People() {
         .map((person, index) => (
           <div className={`person ${index % 2 === 1 ? 'rightPerson' : 'leftPerson'}`} key={index}>
             <img src={require(`../../images/people/${firstNameLowercase(person)}.jpg`)} alt={index} className="personImg" />
-            <div style={{ margin: '0 20px' }}>
+            <div className="contents">
               <h1>{person.fullName}</h1>
               <br />
               <p>{person.bio}</p>

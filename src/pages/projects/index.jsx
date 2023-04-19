@@ -8,8 +8,12 @@ export function formatNames(names) {
 }
 
 export function imgFilePath(id) {
-  // return require(`../../images/projects/${id}.png`);
-  return require(`../../images/projects/${'cassettes'}.png`);
+  try {
+    return require(`../../images/projects/${id}.jpg`);
+  } catch (e) {
+    return require(`../../images/projects/dog.jpg`);
+
+  }
 }
 
 export default function Projects() {
