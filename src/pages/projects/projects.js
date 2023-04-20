@@ -51,8 +51,8 @@ destructively applied to cassettes with magnets.`,
   nelwintao: {
     name: 'The Slushie Machine',
     members: ["Nelwin Gonzalez Barreto", "Tao Setoguchi"],
-    description: "TBD",
-    demoNotes: `TBD`
+    description: "Our goal as producers and developers has been to introduce simplicity and creativity in our plugins. The primary purpose of our project is to create an effects plugin that appeals to a wide demographic of users. We believe that a simple, easy to use plugin will naturally appeal to a wider demographic. We developed a plugin called The Slushie Machine capable of modifying sound in various ways through the use of multiple effects combined in series. By carefully customizing the parameters, orderings, and algorithms of these effects, we have created our own recipe that is unique to our plugin.",
+    demoNotes: `Our goal as producers and developers has been to introduce simplicity and creativity in our plugins. The primary purpose of our project is to create an effects plugin that appeals to a wide demographic of users. We believe that a simple, easy to use plugin will naturally appeal to a wider demographic. We developed a plugin called The Slushie Machine capable of modifying sound in various ways through the use of multiple effects combined in series. By carefully customizing the parameters, orderings, and algorithms of these effects, we have created our own recipe that is unique to our plugin.`
   },
   deepdeadnet: {
     name: 'DeepDeadNet',
@@ -80,7 +80,7 @@ destructively applied to cassettes with magnets.`,
     name: 'Songwriter’s Notebook',
     members: ["Morgan Forbes"],
     description: "Songwriter’s Notebook is a mobile application designed for songwriters to track their musical ideas and inspirations. Designed by a songwriter with a personal vendetta against existing songwriting apps, the app supports the flexibility and creativity that is needed by songwriters across genres and musical styles. In one convenient application, songwriters can store lyrics, melodies, harmonies, chord progressions, audio recordings, photos, videos, and links to other songs to use as samples or inspiration. Special attention was given to designing an intuitive interface that allows users to get their ideas down quickly and easily. This capstone project focused on designing the UI and creating the technical specifications for the application. Post-graduation, Morgan will be continuing to work on the app’s implementation and development.",
-    demoNotes: `TBD`
+    demoNotes: `Songwriter’s Notebook is a mobile application designed for songwriters to track their musical ideas and inspirations. Designed by a songwriter with a personal vendetta against existing songwriting apps, the app supports the flexibility and creativity that is needed by songwriters across genres and musical styles. In one convenient application, songwriters can store lyrics, melodies, harmonies, chord progressions, audio recordings, photos, videos, and links to other songs to use as samples or inspiration. Special attention was given to designing an intuitive interface that allows users to get their ideas down quickly and easily. This capstone project focused on designing the UI and creating the technical specifications for the application. Post-graduation, Morgan will be continuing to work on the app’s implementation and development.`
   },
   wilson: {
     name: 'Saturating Audio Interface',
