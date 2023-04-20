@@ -1,3 +1,4 @@
+import { Worker } from "@react-pdf-viewer/core";
 import { NavLink } from "react-router-dom";
 import logo from "./images/logo.png";
 import './layout.css';
@@ -9,7 +10,9 @@ export default function Layout({ children }) {
         <img src={logo} alt='logo' className="logo" />
       </div>
       <Navbar />
-      {children}
+      <Worker workerUrl="https://unpkg.com/pdfjs-dist@3.4.120/build/pdf.worker.min.js">
+        {children}
+      </Worker>
     </div>
   </div>
 }
