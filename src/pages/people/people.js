@@ -9,7 +9,7 @@ export const PEOPLE = [
   },
   {
     fullName: "Morgan Forbes",
-    bio: "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Praesent posuere non sem vitae posuere. Vestibulum massa mi, imperdiet non tellus a, luctus mollis dolor. Quisque ex leo, molestie a eleifend in, cursus efficitur enim. Integer efficitur vel nisl eu dignissim. Donec libero ipsum, facilisis in tellus nec, placerat pretium dui. Sed finibus leo id dolor finibus posuere."
+    bio: "Morgan is a Computer Science and Music Technology combined major and Mathematics minor. She is a songwriter, vocalist, and multi-instrumentalist who takes particular interest in the music development process, and she aims to create technology that helps musicians to unlock their full creative potential. She is originally from Doylestown, Pennsylvania and is currently living in Boston with her three cats, her best friend who keeps her sane, and her partner who keeps her insane."
   },
   {
     fullName: "Nelwin Gonzalez Barreto",
