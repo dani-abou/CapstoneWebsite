@@ -2,7 +2,22 @@ export const PROJECTS = {
   cassettes: {
     name: 'Cassette Abuse',
     members: ["Dani Abouhamad", "Wilson Dobbs"],
-    description: "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Praesent posuere non sem vitae posuere. Vestibulum massa mi, imperdiet non tellus a, luctus mollis dolor. Quisque ex leo, molestie a eleifend in, cursus efficitur enim. Integer efficitur vel nisl eu dignissim. Donec libero ipsum, facilisis in tellus nec, placerat pretium dui. Sed finibus leo id dolor finibus posuere. Donec sit amet erat id urna dictum condimentum id ac sem. Integer ullamcorper, mauris sit amet euismod aliquet, ligula elit elementum velit, a ultrices est erat vel augue. Nulla finibus ut ipsum ut molestie. Nulla ultrices, massa in imperdiet maximus, magna orci dictum purus, eu vehicula ipsum ante sit amet lorem. Curabitur et velit imperdiet ligula tempor sagittis. Aliquam at quam orci. Curabitur vitae auctor nibh, ut finibus magna.",
+    description: `Alongside technology, music has evolved into a concept far past tangibility.Kids find themselves disillusioned that modern
+musicians sit in front of a screen to turn abstract ideas into
+reality.We want to backtrack that mindset, and demonstrate
+how music exists physically in the domain of analog
+electronics.Cassette tapes, a tangible storage format that
+impacts perception of time and space, were once a widespread
+necessity, but now a source of hipster nostalgia.How can the
+listener's perception be manipulated through physical stress on
+these tapes? In this project, we experiment with different forms
+of physical abuse on cassette tapes in order to manipulate
+sounds in a novel way, with magnetism as the impetus for
+exploration.Consequently, the musical potential of a
+studio- grade 4-track recorder is tested.The recorder has an
+abundance of inputs and outputs.Moreover, we intend on
+demonstrating these new effects with an original composition.
+`,
     musicName: "Warped",
     musicalNotes: `Over the years, cassettes became a representation of punk rock. Maybe it’s because of
 the intrinsic distortion they can cause, but maybe (and probably) because of their overlapping
