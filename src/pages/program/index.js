@@ -55,7 +55,8 @@ const MUSIC = [
   { time: '4:10', id: 'josh' },
   { time: '', id: 'absolute' },
   { time: '', id: 'cassettes' },
-  { time: '', id: 'ayla' }
+  { time: '', id: 'ayla' },
+  { time: '', id: 'axetron' }
 ]
 
 const DEMOS = [
@@ -83,14 +84,14 @@ export default function Project() {
         </div>
         <Section section={PRESENTATIONS.slice(3, 6)} location='description' />
         <div className="event-program-item">
-          <div className="event-program-time">2:25 PM</div>
+          <div className="event-program-time">2:40 PM</div>
           <div className="event-program-title">Break</div>
           <div className="event-program-speaker"></div>
         </div>
         <Section section={PRESENTATIONS.slice(6, 9)} location='description' />
 
         <div className="event-program-item">
-          <div className="event-program-time">3:20 PM</div>
+          <div className="event-program-time">3:35 PM</div>
           <div className="event-program-title">Food and Refreshments</div>
           <div className="event-program-speaker"></div>
         </div>
