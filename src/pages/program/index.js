@@ -17,7 +17,7 @@ function AccordionSection({ project, time, location }) {
   return <AccordionItem >
     <AccordionItemHeading>
       <AccordionItemButton>
-        <div className="event-program-item">
+        <div className="event-program-item" style={{ cursor: 'pointer' }}>
           <div className="event-program-time">{time ? `${time} PM` : ''}</div>
           <div className="event-program-title">{location === "musicalNotes" ? project.musicName : project.name}</div>
           <div className="event-program-speaker">{formatNames(project.members)}</div>
