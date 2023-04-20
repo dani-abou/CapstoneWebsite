@@ -1,131 +1,115 @@
-import "./styles.css"
+import { faCoffee } from '@fortawesome/free-solid-svg-icons';
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
+import { useMemo, useState } from 'react';
+import {
+  Accordion,
+  AccordionItem,
+  AccordionItemButton,
+  AccordionItemHeading,
+  AccordionItemPanel,
+  AccordionItemState
+} from 'react-accessible-accordion';
+import { formatNames } from '../projects';
+import { PROJECTS } from '../projects/projects';
+import "./styles.css";
+
+function AccordionSection({ project, time, location }) {
+  return <AccordionItem >
+    <AccordionItemHeading>
+      <AccordionItemButton>
+        <div className="event-program-item">
+          <div className="event-program-time">{time ? `${time} PM` : ''}</div>
+          <div className="event-program-title">{location === "musicalNotes" ? project.musicName : project.name}</div>
+          <div className="event-program-speaker">{formatNames(project.members)}</div>
+        </div>
+      </AccordionItemButton>
+    </AccordionItemHeading>
+    <AccordionItemPanel>
+      <p className='accordion-text'>
+        {project[location]}
+      </p>
+    </AccordionItemPanel>
+  </AccordionItem>
+
+}
+
+function Section({ section, location }) {
+  return section.map(pres => {
+    return <AccordionSection key={pres.id} project={PROJECTS[pres.id]} time={pres.time} location={location} />
+  })
+}
+
+const PRESENTATIONS = [
+  { time: '1:00', id: 'josh' },
+  { time: '1:15', id: 'absolute' },
+  { time: '1:30', id: 'ayla' },
+  { time: '1:55', id: 'nelwintao' },
+  { time: '2:10', id: 'cassettes' },
+  { time: '2:25', id: 'wilson' },
+  { time: '2:50', id: 'axetron' },
+  { time: '3:05', id: 'deepdeadnet' },
+  { time: '3:20', id: 'morgan' },
+]
+
+const MUSIC = [
+  { time: '4:10', id: 'josh' },
+  { time: '', id: 'absolute' },
+  { time: '', id: 'cassettes' },
+  { time: '', id: 'ayla' }
+]
+
+const DEMOS = [
+  'ayla',
+  'deepdeadnet',
+  'axetron',
+  'absolute',
+  'nelwintao',
+  'morgan',
+  'wilson'
+]
+
 
 export default function Project() {
+  return <div className="event-program">
+    <h3 className="event-program-day">Saturday, April 22nd (Presentations)</h3>
+    <Accordion allowMultipleExpanded
+      allowZeroExpanded>
+      <div>
+        <Section section={PRESENTATIONS.slice(0, 3)} location='description' />
+        <div className="event-program-item">
+          <div className="event-program-time">1:45 PM</div>
+          <div className="event-program-title">Break</div>
+          <div className="event-program-speaker"></div>
+        </div>
+        <Section section={PRESENTATIONS.slice(3, 6)} location='description' />
+        <div className="event-program-item">
+          <div className="event-program-time">2:25 PM</div>
+          <div className="event-program-title">Break</div>
+          <div className="event-program-speaker"></div>
+        </div>
+        <Section section={PRESENTATIONS.slice(6, 9)} location='description' />
 
-  return <div class="event-program">
-  <h3 class="event-program-day">Saturday, April 22nd (Presentations)</h3>
-  <div class="event-program-item">
-    <div class="event-program-time">1:00 PM</div>
-    <div class="event-program-title">Odyssey of Undulating Horizons</div>
-    <div class="event-program-speaker">Josh Tseng</div>
+        <div className="event-program-item">
+          <div className="event-program-time">3:20 PM</div>
+          <div className="event-program-title">Food and Refreshments</div>
+          <div className="event-program-speaker"></div>
+        </div>
+        <h3 className="event-program-day">Saturday, April 22nd (Performances)</h3>
+        <Section section={MUSIC} location='musicalNotes' />
+
+        <h3 className="event-program-day">Sunday, April 23nd (Demonstrations)</h3>
+
+        <div className="event-program-item">
+          <div className="event-program-time">3:00 PM</div>
+          <div className="event-program-title">Introduction and Closing Remarks</div>
+          <div className="event-program-speaker"></div>
+        </div>
+        {DEMOS.map(demo => {
+          return <AccordionSection key={demo} project={PROJECTS[demo]} time={demo === 'ayla' ? '3:05' : ''} location='demoNotes' />
+        })}
+
+      </div>
+    </Accordion>
   </div>
-  <div class="event-program-item">
-    <div class="event-program-time">1:15 PM</div>
-    <div class="event-program-title">ABSOLUTE: Player-Choice Determined Music in a Rhythm Game</div>
-    <div class="event-program-speaker">Sage Langenfeld, Maggie Kraine, and Alex Ma</div>
-  </div>
-  <div class="event-program-item">
-    <div class="event-program-time">1:30 PM</div>
-    <div class="event-program-title">Does Modulation in Music Influence Sustained Attention?</div>
-    <div class="event-program-speaker">Ayla Hadley</div>
-  </div>
-  <div class="event-program-item">
-    <div class="event-program-time">1:45 PM</div>
-    <div class="event-program-title">Break</div>
-    <div class="event-program-speaker"></div>
-  </div>
-  <div class="event-program-item">
-    <div class="event-program-time">1:55 PM</div>
-    <div class="event-program-title">The Slushie Machine</div>
-    <div class="event-program-speaker">Nelwin Gonzalez Barreto and Tao Setoguchi</div>
-  </div>
-  <div class="event-program-item">
-    <div class="event-program-time">2:10 PM</div>
-    <div class="event-program-title">Cassette Abuse</div>
-    <div class="event-program-speaker">Dani Abouhamad and Wilson Dobbs</div>
-  </div>
-  <div class="event-program-item">
-    <div class="event-program-time">2:25 PM</div>
-    <div class="event-program-title">Break</div>
-    <div class="event-program-speaker"></div>
-  </div>
-  <div class="event-program-item">
-    <div class="event-program-time">2:35 PM</div>
-    <div class="event-program-title">AxeTron</div>
-    <div class="event-program-speaker">Ben Wakefield and Jerome Washo</div>
-  </div>
-  <div class="event-program-item">
-    <div class="event-program-time">2:50 PM</div>
-    <div class="event-program-title">DeepDeadNet</div>
-    <div class="event-program-speaker">Ben Wakefield</div>
-  </div>
-  <div class="event-program-item">
-    <div class="event-program-time">3:05 PM</div>
-    <div class="event-program-title">Designing an App for Songwriters</div>
-    <div class="event-program-speaker">Morgan Forbes</div>
-  </div>
-  <div class="event-program-item">
-    <div class="event-program-time">3:20 PM</div>
-    <div class="event-program-title">Food and Refreshments</div>
-    <div class="event-program-speaker"></div>
-  </div>
-  <h3 class="event-program-day">Saturday, April 22nd (Performances)</h3>
-  <div class="event-program-item">
-    <div class="event-program-time">4:10 PM</div>
-    <div class="event-program-title">Odyssey of Undulating Horizons</div>
-    <div class="event-program-speaker">Josh Tseng</div>
-  </div>
-  <div class="event-program-item">
-    <div class="event-program-time"></div>
-    <div class="event-program-title">ABSOLUTE</div>
-    <div class="event-program-speaker">Sage Langenfeld, Maggie Kraine, and Alex Ma</div>
-  </div>
-  <div class="event-program-item">
-    <div class="event-program-time"></div>
-    <div class="event-program-title">Untitled</div>
-    <div class="event-program-speaker">Dani Abouhamad and Wilson Dobbs</div>
-  </div>
-  <div class="event-program-item">
-    <div class="event-program-time"></div>
-    <div class="event-program-title">Twilight Sand</div>
-    <div class="event-program-speaker">Ayla Hadley</div>
-  </div>
-  <h3 class="event-program-day">Sunday, April 23nd (Demonstrations)</h3>
-  <div class="event-program-item">
-    <div class="event-program-time">3:00 PM</div>
-    <div class="event-program-title">Introduction and Closing Remarks</div>
-    <div class="event-program-speaker"></div>
-  </div>
-  <div class="event-program-item">
-    <div class="event-program-time">3:05 PM</div>
-    <div class="event-program-title">Odyssey of Undulating Horizons</div>
-    <div class="event-program-speaker">Josh Tseng</div>
-  </div>
-  <div class="event-program-item">
-    <div class="event-program-time"></div>
-    <div class="event-program-title">ABSOLUTE: Player-Choice Determined Music in a Rhythm Game</div>
-    <div class="event-program-speaker">Sage Langenfeld, Maggie Kraine, and Alex Ma</div>
-  </div>
-  <div class="event-program-item">
-    <div class="event-program-time"></div>
-    <div class="event-program-title">Does Modulation in Music Influence Sustained Attention?</div>
-    <div class="event-program-speaker">Ayla Hadley</div>
-  </div>
-  <div class="event-program-item">
-    <div class="event-program-time"></div>
-    <div class="event-program-title">The Slushie Machine</div>
-    <div class="event-program-speaker">Nelwin Gonzalez Barreto and Tao Setoguchi</div>
-  </div>
-  <div class="event-program-item">
-    <div class="event-program-time"></div>
-    <div class="event-program-title">Cassette Abuse</div>
-    <div class="event-program-speaker">Dani Abouhamad and Wilson Dobbs</div>
-  </div>
-  <div class="event-program-item">
-    <div class="event-program-time"></div>
-    <div class="event-program-title">AxeTron</div>
-    <div class="event-program-speaker">Ben Wakefield and Jerome Washo</div>
-  </div>
-  <div class="event-program-item">
-    <div class="event-program-time"></div>
-    <div class="event-program-title">DeepDeadNet</div>
-    <div class="event-program-speaker">Ben Wakefield</div>
-  </div>
-  <div class="event-program-item">
-    <div class="event-program-time"></div>
-    <div class="event-program-title">Designing an App for Songwriters</div>
-    <div class="event-program-speaker">Morgan Forbes</div>
-  </div>
-</div>
 
 }
