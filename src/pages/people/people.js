@@ -13,11 +13,11 @@ export const PEOPLE = [
   },
   {
     fullName: "Nelwin Gonzalez Barreto",
-    bio: "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Praesent posuere non sem vitae posuere. Vestibulum massa mi, imperdiet non tellus a, luctus mollis dolor. Quisque ex leo, molestie a eleifend in, cursus efficitur enim. Integer efficitur vel nisl eu dignissim. Donec libero ipsum, facilisis in tellus nec, placerat pretium dui. Sed finibus leo id dolor finibus posuere."
+    bio: "Nelwin Gonzalez Barreto is an international 4th year student at Northeastern studying Music Tech and Computer Science as a combined major. His goal is to expand his knowledge on musical digital tools, more specifically audio plugins. He can produce and mix different genres of music as well as code in different languages. By combining both software and musical skills, he co-developed an audio plugin that can be used in most DAWs."
   },
   {
     fullName: "Ayla Hadley",
-    bio: "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Praesent posuere non sem vitae posuere. Vestibulum massa mi, imperdiet non tellus a, luctus mollis dolor. Quisque ex leo, molestie a eleifend in, cursus efficitur enim. Integer efficitur vel nisl eu dignissim. Donec libero ipsum, facilisis in tellus nec, placerat pretium dui. Sed finibus leo id dolor finibus posuere."
+    bio: "Ayla is a fourth year Music Technology major with minors in Recording and Spanish. She enjoys singing and creating different genres of music as well as listening to alternative and world music. Her career interests include music cognition, music recording, production and mixing."
   },
   {
     fullName: "Maggie Kraine",
@@ -25,11 +25,11 @@ export const PEOPLE = [
   },
   {
     fullName: "Sage Langenfeld",
-    bio: "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Praesent posuere non sem vitae posuere. Vestibulum massa mi, imperdiet non tellus a, luctus mollis dolor. Quisque ex leo, molestie a eleifend in, cursus efficitur enim. Integer efficitur vel nisl eu dignissim. Donec libero ipsum, facilisis in tellus nec, placerat pretium dui. Sed finibus leo id dolor finibus posuere."
+    bio: "Hi, I'm Sage Jade Langenfeld and I'm a graduating CS & Music Tech major with an interest in game development. For my capstone project, I wanted to explore the importance of music in games. I enjoy creating a lot of different kinds of art, from comics to animation. Some of my interests are goats and puzzles."
   },
   {
     fullName: "Alex Ma",
-    bio: "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Praesent posuere non sem vitae posuere. Vestibulum massa mi, imperdiet non tellus a, luctus mollis dolor. Quisque ex leo, molestie a eleifend in, cursus efficitur enim. Integer efficitur vel nisl eu dignissim. Donec libero ipsum, facilisis in tellus nec, placerat pretium dui. Sed finibus leo id dolor finibus posuere."
+    bio: "My name is Alex Ma and I am a 5th year Computer Science and Music Technology major from New Jersey. Some of my hobbies include ultimate frisbee, playing video games, and playing the piano. One of my passions is to create video games that have immersive player experiences, which has led me to our project topic. I also listen to a wide variety of music, my favorite genres being hip hop, j-pop, electronic music, and video game music."
   },
   {
     fullName: "Tao Setoguchi",
@@ -37,7 +37,7 @@ export const PEOPLE = [
   },
   {
     fullName: "Josh Tseng",
-    bio: "Josh is an international student from Taiwan. He is currently in his fourth year of study, pursuing a Bachelor of Arts in Music. Josh has a strong passion for orchestral programming and audio engineering. During his co-op experience, he had the opportunity to work at the recording studio at Snell, which marked the beginning of his exciting journey in the field."
+    bio: "Hey guys! My name is Josh, and I'm an international student from Taiwan. I'm currently in my fourth year of study, majoring in BA Music. I have a deep interest in orchestral programming and audio engineering. During my co-op, I worked at the recording studio at Snell, which marks the beginning of this exciting journey!"
   },
   {
     fullName: "Ben Wakefield",
@@ -45,6 +45,6 @@ export const PEOPLE = [
   },
   {
     fullName: "Jerome Washo",
-    bio: "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Praesent posuere non sem vitae posuere. Vestibulum massa mi, imperdiet non tellus a, luctus mollis dolor. Quisque ex leo, molestie a eleifend in, cursus efficitur enim. Integer efficitur vel nisl eu dignissim. Donec libero ipsum, facilisis in tellus nec, placerat pretium dui. Sed finibus leo id dolor finibus posuere."
+    bio: "Jerome is 5th year Music Technology major that began his musical journey at the age of 6 on guitar. Through the years he learned to appreciate the relationship between music and technology, spending many of his later years tinkering with computers and guitars. Eventually, he would continue to pickup more instruments such as piano where he found even more joy in learning and continues to be an integral part of his daily process."
   }
 ]
