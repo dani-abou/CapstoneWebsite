@@ -33,7 +33,7 @@ export const PEOPLE = [
   },
   {
     fullName: "Tao Setoguchi",
-    bio: "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Praesent posuere non sem vitae posuere. Vestibulum massa mi, imperdiet non tellus a, luctus mollis dolor. Quisque ex leo, molestie a eleifend in, cursus efficitur enim. Integer efficitur vel nisl eu dignissim. Donec libero ipsum, facilisis in tellus nec, placerat pretium dui. Sed finibus leo id dolor finibus posuere."
+    bio: "Tao is a 5th year Computer Science and Music Technology major. He discovered his passion for music at a young age and later continued to hone in on music production. He also enjoys creating music, playing video games, and audio engineering. Currently, his focus is to produce songs that feature his own singing."
   },
   {
     fullName: "Josh Tseng",
