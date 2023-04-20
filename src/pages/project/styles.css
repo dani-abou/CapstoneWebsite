@@ -19,6 +19,16 @@
   text-align: justify;
 }
 
+.viewer-div {
+  width: 80%;
+  margin-left: 50%;
+  transform: translate(-50%);
+  margin-bottom: 100px;
+  margin-top: 50px;
+  height: 800px;
+  background-color: rgb(204, 196, 255);
+}
+
 @media only screen and (max-device-width: 850px) {
   .page-flex {
     display: inline;
@@ -34,5 +44,9 @@
   .abstract {
     margin: 0 20px 40px;
     font-size: 14px;
+  }
+
+  .viewer-div {
+    width: 95%;
   }
 }
