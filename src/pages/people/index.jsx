@@ -20,6 +20,7 @@ export default function People() {
             <div className="contents">
               <h1 className="name">{person.fullName}</h1>
               <p className="bio">{person.bio}</p>
+              <br />
             </div>
           </div>
         ))

@@ -45,7 +45,7 @@
   text-align: center;
 }
 
-@media only screen and (max-device-width: 640px) {
+@media only screen and (max-device-width: 1000px) {
   .projects-grid {
     padding: 25px 0;
     flex-direction: column;
@@ -55,8 +55,8 @@
   }
 
   .project {
-    flex: 0 0 150px;
-    width: 80%;
+    flex: 1 0 180px;
+    width: 90%;
 
     display: flex;
     justify-content: space-between;
